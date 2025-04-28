@@ -1,3 +1,8 @@
+button {
+    background-color: none;
+}
+
+
 button, .submit, .reset, .button  {
     width: 95%;
     display: block;
