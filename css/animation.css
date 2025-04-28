@@ -680,6 +680,11 @@ body {
   
   
   /* 12 */
+
+  button:hover {
+    background-color: none;
+  }
+
   .btn-12{
     background-color: none;
     position: relative;

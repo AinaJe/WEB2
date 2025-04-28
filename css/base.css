@@ -3,7 +3,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
 @import url('./accordion.css');
-@import url('./animation.css');
 @import url('./button.css');
 @import url('./carousel.css');
 @import url('./chat.css');
@@ -14,6 +13,7 @@
 @import url('./form.css');
 @import url('./ajax.css');
 @import url('./images.css');
+@import url('./animation.css');
 
 :root{
     font-size: 14pt;
