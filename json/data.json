@@ -1,0 +1,31 @@
+{
+    "elementi": [
+        {
+            "tegs": "div",
+            "apraksts": "Vispārējs konteiners."
+        },
+        {
+            "tegs": "p",
+            "apraksts": "Paragrāfs."
+        },
+        {
+            "tegs": "a",
+            "apraksts": "Hipersaite",
+            "atributi": {
+                "href": "URL"
+            }
+        },
+        {
+            "tegs": "img",
+            "apraksts": "Attēls",
+            "atributi": {
+                "src": "URL",
+                "alt": "Apraksts"
+            }
+        },
+        {
+            "tegs": "button",
+            "apraksts": "Poga"
+        }
+    ]
+}

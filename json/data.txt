@@ -1,0 +1,1866 @@
+"kategorijas": [
+    {
+        "kategorija": "Metadati",
+        "tagi": [
+            {
+                "tegs": "base",
+                "nozime": "Norāda pamata URL visiem relatīvajiem URL dokumentā.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "href",
+                        "apraksts": "Pamata URL relatīvajiem linkiem."
+                    },
+                    {
+                        "nosaukums": "target",
+                        "apraksts": "Noklusējuma pārlūkošanas konteksts hipersaitēm un formām."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka href ir derīgs, lai izvairītos no neskaidrībām palīgtehnoloģijām.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head>, tikai viens dokumentā.",
+                "piemers": "<base href='https://piemers.lv/'>"
+            },
+            {
+                "tegs": "head",
+                "nozime": "Satur dokumenta metadatus, piemēram, virsrakstu, skriptus un stilus.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka metadati ir atbilstoši pieejamības rīkiem.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Metadatu saknes elements, <html> bērns.",
+                "piemers": "<head><title>Mana Lapa</title></head>"
+            },
+            {
+                "tegs": "link",
+                "nozime": "Definē attiecības starp pašreizējo dokumentu un ārējiem resursiem, piemēram, stila lapām.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "href",
+                        "apraksts": "Saistītā resursa URL."
+                    },
+                    {
+                        "nosaukums": "rel",
+                        "apraksts": "Attiecība starp dokumentu un resursu (piem., 'stylesheet', 'icon')."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Saistītā resursa MIME tips."
+                    },
+                    {
+                        "nosaukums": "media",
+                        "apraksts": "Norāda, kuriem medijiem resurss attiecas (piem., 'screen')."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka rel='icon' ietver pieejamu favicon aprakstu, ja nepieciešams.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head>.",
+                "piemers": "<link rel='stylesheet' href='stili.css'>"
+            },
+            {
+                "tegs": "meta",
+                "nozime": "Nodrošina metadatus par dokumentu, piemēram, rakstzīmju kodējumu vai skata loga iestatījumus.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "charset",
+                        "apraksts": "Norāda rakstzīmju kodējumu (piem., 'UTF-8')."
+                    },
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Metadatu nosaukums (piem., 'description', 'keywords')."
+                    },
+                    {
+                        "nosaukums": "content",
+                        "apraksts": "Vērtība, kas saistīta ar name vai http-equiv atribūtu."
+                    },
+                    {
+                        "nosaukums": "http-equiv",
+                        "apraksts": "Norāda HTTP galveni, piemēram, 'refresh'."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet name='description' ekrānlasītāju saderībai.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head>.",
+                "piemers": "<meta charset='UTF-8'>"
+            },
+            {
+                "tegs": "title",
+                "nozime": "Definē dokumenta virsrakstu, kas redzams pārlūka virsraksta joslā vai cilnē.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksts ir aprakstošs ekrānlasītājiem un SEO.",
+                "semantiskaNozime": "Metadati, semantisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head>, obligāts elements.",
+                "piemers": "<title>Mana Vietne</title>"
+            },
+            {
+                "tegs": "style",
+                "nozime": "Satur CSS stilus dokumenta formatēšanai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Stila satura MIME tips (parasti 'text/css')."
+                    },
+                    {
+                        "nosaukums": "media",
+                        "apraksts": "Norāda, kuriem medijiem stils attiecas (piem., 'screen', 'print')."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka stili neapdraud satura pieejamību.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head> vai kur plūsmas saturs ir gaidīts.",
+                "piemers": "<style>body { background: #fff; }</style>"
+            },
+            {
+                "tegs": "script",
+                "nozime": "Ievieto vai atsaucas uz izpildāmu skriptu, piemēram, JavaScript.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Ārējā skripta URL."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Skripta MIME tips (piem., 'text/javascript')."
+                    },
+                    {
+                        "nosaukums": "async",
+                        "apraksts": "Izpilda skriptu asinhroni."
+                    },
+                    {
+                        "nosaukums": "defer",
+                        "apraksts": "Atliek skripta izpildi līdz dokumenta ielādei."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet alternatīvu saturu, ja skripti ir atspējoti.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [
+                    "onload",
+                    "onerror"
+                ],
+                "lietojumaKonteksts": "Iekš <head> vai <body>.",
+                "piemers": "<script src='skripts.js'></script>"
+            },
+            {
+                "tegs": "noscript",
+                "nozime": "Definē alternatīvu saturu, kas tiek rādīts, ja skripti ir atspējoti.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Nodrošina pieejamību, ja JavaScript nav pieejams.",
+                "semantiskaNozime": "Metadati, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <head> vai <body>.",
+                "piemers": "<noscript><p>Skripti ir atspējoti.</p></noscript>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Satura sadalījums",
+        "tagi": [
+            {
+                "tegs": "article",
+                "nozime": "Pārstāv patstāvīgu satura vienību, piemēram, emuāra ierakstu vai ziņu rakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet ARIA role='article', ja nepieciešams sarežģītām struktūrām.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<article><h1>Ziņas</h1><p>Saturs...</p></article>"
+            },
+            {
+                "tegs": "aside",
+                "nozime": "Pārstāv saturu, kas ir tangenciāli saistīts ar galveno saturu, piemēram, sānu joslas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='complementary' pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<aside><h2>Saistītās Saites</h2></aside>"
+            },
+            {
+                "tegs": "nav",
+                "nozime": "Pārstāv navigācijas saišu sadaļu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='navigation' un aria-label skaidrībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<nav><ul><li><a href='#'>Sākums</a></li></ul></nav>"
+            },
+            {
+                "tegs": "section",
+                "nozime": "Pārstāv tematisku satura grupējumu, parasti ar virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet ARIA role='region' ar aria-labelledby, ja nepieciešams.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<section><h2>Nodaļa</h2><p>Teksts...</p></section>"
+            },
+            {
+                "tegs": "header",
+                "nozime": "Pārstāv ievada saturu vai navigācijas grupu, piemēram, galveni.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='banner' galvenajai galvenei.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<header><h1>Laipni lūdzam</h1></header>"
+            },
+            {
+                "tegs": "footer",
+                "nozime": "Pārstāv sadaļas vai dokumenta kājeni, piemēram, kontaktinformāciju vai autortiesības.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='contentinfo' galvenajai kājenei.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<footer><p>© 2025</p></footer>"
+            },
+            {
+                "tegs": "main",
+                "nozime": "Pārstāv galveno dokumenta saturu, kas ir unikāls lapai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='main' un tikai vienu reizi dokumentā.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts, ne iekš citos sadalījuma elementos.",
+                "piemers": "<main><h1>Galvenais Saturs</h1></main>"
+            },
+            {
+                "tegs": "h1",
+                "nozime": "Pārstāv augstākā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h1>Galvenais Virsraksts</h1>"
+            },
+            {
+                "tegs": "h2",
+                "nozime": "Pārstāv otrā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h2>Apakšvirsraksts</h2>"
+            },
+            {
+                "tegs": "h3",
+                "nozime": "Pārstāv trešā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h3>Trešais Virsraksts</h3>"
+            },
+            {
+                "tegs": "h4",
+                "nozime": "Pārstāv ceturtā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h4>Ceturtais Virsraksts</h4>"
+            },
+            {
+                "tegs": "h5",
+                "nozime": "Pārstāv piektā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h5>Piektais Virsraksts</h5>"
+            },
+            {
+                "tegs": "h6",
+                "nozime": "Pārstāv sestā līmeņa virsrakstu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksti ir loģiskā secībā pieejamībai.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<h6>Sestais Virsraksts</h6>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Frāžu saturs",
+        "tagi": [
+            {
+                "tegs": "a",
+                "nozime": "Izveido hipersaiti uz citām tīmekļa lapām, failiem vai vietām tajā pašā lapā.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "href",
+                        "apraksts": "Saistītā resursa URL."
+                    },
+                    {
+                        "nosaukums": "target",
+                        "apraksts": "Kur atvērt saiti (piem., '_blank')."
+                    },
+                    {
+                        "nosaukums": "download",
+                        "apraksts": "Liek lietotājam lejupielādēt saistīto resursu."
+                    },
+                    {
+                        "nosaukums": "rel",
+                        "apraksts": "Attiecība starp saiti un resursu (piem., 'nofollow')."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka href ir aprakstošs un izmantojiet aria-label, ja nepieciešams.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onclick",
+                    "onfocus"
+                ],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<a href='https://piemers.lv'>Apmeklēt</a>"
+            },
+            {
+                "tegs": "abbr",
+                "nozime": "Pārstāv saīsinājumu vai akronīmu ar papildu paskaidrojumu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "title",
+                        "apraksts": "Pilns saīsinājuma vai akronīma apraksts."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet title atribūtu ekrānlasītāju saderībai.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<abbr title='Pasaules Tīmekļa Konsorcijs'>W3C</abbr>"
+            },
+            {
+                "tegs": "b",
+                "nozime": "Izceļ tekstu stilistiski, parasti treknrakstā, bez semantiskas nozīmes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izvairieties no lietošanas semantiskai nozīmei; izmantojiet <strong>.",
+                "semantiskaNozime": "Nesemantisks, stilistisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<b>Trekns teksts</b>"
+            },
+            {
+                "tegs": "cite",
+                "nozime": "Norāda atsauci uz radošu darbu, piemēram, grāmatu vai filmu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, atsauce",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<cite>1984</cite>"
+            },
+            {
+                "tegs": "code",
+                "nozime": "Pārstāv datora koda fragmentu, parasti attēlots monospace fontā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, tehnisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<code>console.log('Sveiki');</code>"
+            },
+            {
+                "tegs": "data",
+                "nozime": "Saista saturu ar mašīnlasāmu vērtību, kas norādīta value atribūtā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Mašīnlasāma satura vērtība."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet, ka saturs ir saprotams arī bez value atribūta.",
+                "semantiskaNozime": "Semantisks, datu anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<data value='12345'>Produkts #12345</data>"
+            },
+            {
+                "tegs": "dfn",
+                "nozime": "Norāda termina definīciju, kas tiek paskaidrots kontekstā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, definīcija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<dfn>HTML</dfn> ir tīmekļa lapu veidošanas valoda."
+            },
+            {
+                "tegs": "em",
+                "nozime": "Norāda uzsvērtu tekstu, parasti attēlots kursīvā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, uzsvars",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<em>Uzsvērts teksts</em>"
+            },
+            {
+                "tegs": "i",
+                "nozime": "Izceļ tekstu stilistiski, parasti kursīvā, bez semantiskas nozīmes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izvairieties no lietošanas semantiskai nozīmei; izmantojiet <em>.",
+                "semantiskaNozime": "Nesemantisks, stilistisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<i>Kursīvs teksts</i>"
+            },
+            {
+                "tegs": "kbd",
+                "nozime": "Pārstāv lietotāja ievadi, piemēram, tastatūras taustiņus vai komandas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, tehnisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<kbd>Ctrl + C</kbd>"
+            },
+            {
+                "tegs": "mark",
+                "nozime": "Izceļ tekstu kā atzīmētu vai svarīgu, parasti ar dzeltenu fonu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka izcelšana ir redzama arī ar zemu kontrastu.",
+                "semantiskaNozime": "Semantisks, izcelšana",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<mark>Izcelts teksts</mark>"
+            },
+            {
+                "tegs": "q",
+                "nozime": "Pārstāv īsu citātu, kas ietverts pēdiņās.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "cite",
+                        "apraksts": "URL, kas norāda citāta avotu."
+                    }
+                ],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, citāts",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<q cite='https://piemers.lv'>Citāts</q>"
+            },
+            {
+                "tegs": "s",
+                "nozime": "Norāda saturu, kas vairs nav precīzs vai aktuāls, parasti ar svītrojumu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka svītrojums ir salasāms ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, statuss",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<s>Vecā cena: 100</s>"
+            },
+            {
+                "tegs": "samp",
+                "nozime": "Pārstāv datorprogrammas vai skripta izvadi.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, tehnisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<samp>Izvade: Error 404</samp>"
+            },
+            {
+                "tegs": "small",
+                "nozime": "Pārstāv sīkdruku, piemēram, juridiskus paziņojumus vai atrunas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka teksts ir salasāms, neskatoties uz mazāku fontu.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<small>Autortiesības 2025</small>"
+            },
+            {
+                "tegs": "span",
+                "nozime": "Vispārējs rindas konteiners frāžu saturam, ko izmanto stilēšanai vai skriptēšanai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet ARIA lomas, ja pievienojat semantisku nozīmi.",
+                "semantiskaNozime": "Nesemantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onclick",
+                    "onmouseover"
+                ],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<span class='izcelt'>Teksts</span>"
+            },
+            {
+                "tegs": "strong",
+                "nozime": "Norāda uz svarīgu tekstu, parasti attēlots treknrakstā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, uzsvars",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<strong>Svarīgi!</strong>"
+            },
+            {
+                "tegs": "sub",
+                "nozime": "Pārstāv apakšrakstu, piemēram, ķīmiskajās formulās vai matemātiskos izteiksmēs.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka apakšraksts ir salasāms ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, formatēšana",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<sub>2</sub>"
+            },
+            {
+                "tegs": "sup",
+                "nozime": "Pārstāv virsrakstu, piemēram, pakāpēs vai zemsvītras piezīmēs.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka virsraksts ir salasāms ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, formatēšana",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<sup>2</sup>"
+            },
+            {
+                "tegs": "time",
+                "nozime": "Pārstāv datumu, laiku vai laika periodu mašīnlasāmā formātā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "datetime",
+                        "apraksts": "Mašīnlasāms datuma vai laika formāts."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet, ka saturs ir saprotams arī bez datetime atribūta.",
+                "semantiskaNozime": "Semantisks, datu anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<time datetime='2025-04-27'>27. aprīlis, 2025</time>"
+            },
+            {
+                "tegs": "u",
+                "nozime": "Izceļ tekstu stilistiski, parasti ar pasvītrojumu, bez semantiskas nozīmes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izvairieties no lietošanas hipersaitēm, lai neradītu neskaidrības.",
+                "semantiskaNozime": "Nesemantisks, stilistisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<u>Pasvītrots teksts</u>"
+            },
+            {
+                "tegs": "var",
+                "nozime": "Pārstāv mainīgo matemātiskā izteiksmē vai programmēšanas kontekstā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, papildu ARIA nav nepieciešama.",
+                "semantiskaNozime": "Semantisks, tehnisks",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<var>x</var> = 5"
+            },
+            {
+                "tegs": "wbr",
+                "nozime": "Norāda vietu, kur var ievietot rindas pārtraukumu, ja nepieciešams.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Neietekmē pieejamību, bet palīdz teksta plūsmai.",
+                "semantiskaNozime": "Strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "GaršVārds<wbr>Turpinās"
+            }
+        ]
+    },
+    {
+        "kategorija": "Iegults saturs",
+        "tagi": [
+            {
+                "tegs": "area",
+                "nozime": "Definē klikšķināmu apgabalu attēla kartē, kas saistīts ar hipersaiti.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "alt",
+                        "apraksts": "Alternatīvs teksts pieejamībai."
+                    },
+                    {
+                        "nosaukums": "coords",
+                        "apraksts": "Koordinātas, kas definē apgabalu."
+                    },
+                    {
+                        "nosaukums": "href",
+                        "apraksts": "Saistītā resursa URL."
+                    },
+                    {
+                        "nosaukums": "shape",
+                        "apraksts": "Apgabala forma (piem., 'rect', 'circle')."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet aprakstošu alt atribūtu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <map>.",
+                "piemers": "<area shape='rect' coords='0,0,50,50' href='https://piemers.lv' alt='Saites apgabals'>"
+            },
+            {
+                "tegs": "audio",
+                "nozime": "Iegulda skaņas saturu, piemēram, mūziku vai audio straumes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Audio faila URL."
+                    },
+                    {
+                        "nosaukums": "controls",
+                        "apraksts": "Rāda audio vadīklas."
+                    },
+                    {
+                        "nosaukums": "autoplay",
+                        "apraksts": "Atskaņo audio automātiski."
+                    },
+                    {
+                        "nosaukums": "loop",
+                        "apraksts": "Cikliski atskaņo audio."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet alternatīvu saturu vai subtitrus pieejamībai.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onplay",
+                    "onpause"
+                ],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<audio controls><source src='audio.mp3' type='audio/mpeg'></audio>"
+            },
+            {
+                "tegs": "img",
+                "nozime": "Iegulda attēlu dokumentā.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Attēla URL."
+                    },
+                    {
+                        "nosaukums": "alt",
+                        "apraksts": "Alternatīvs teksts pieejamībai un kļūmes gadījumā."
+                    },
+                    {
+                        "nosaukums": "width",
+                        "apraksts": "Attēla platums pikseļos."
+                    },
+                    {
+                        "nosaukums": "height",
+                        "apraksts": "Attēla augstums pikseļos."
+                    },
+                    {
+                        "nosaukums": "loading",
+                        "apraksts": "Kontrolē attēla ielādes uzvedību (piem., 'lazy')."
+                    },
+                    {
+                        "nosaukums": "srcset",
+                        "apraksts": "Attēlu avotu kopa dažādām izšķirtspējām."
+                    }
+                ],
+                "pieejamiba": "Vienmēr iekļaujiet aprakstošu alt atribūtu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onload",
+                    "onerror"
+                ],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<img src='attels.jpg' alt='Kalnu ainava' loading='lazy'>"
+            },
+            {
+                "tegs": "map",
+                "nozime": "Definē attēla karti ar klikšķināmiem apgabaliem, ko izmanto ar <area>.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Kartes nosaukums, ko saista ar attēla usemap atribūtu."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet, ka visi <area> elementi ir pieejami.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<map name='karte'><area shape='rect' coords='0,0,50,50' href='#'></map>"
+            },
+            {
+                "tegs": "track",
+                "nozime": "Pievieno subtitrus, parakstus vai citu tekstuālu saturu video vai audio elementiem.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Teksta celiņa URL."
+                    },
+                    {
+                        "nosaukums": "kind",
+                        "apraksts": "Celiņa tips (piem., 'subtitles', 'captions')."
+                    },
+                    {
+                        "nosaukums": "srclang",
+                        "apraksts": "Celiņa valoda (piem., 'en')."
+                    },
+                    {
+                        "nosaukums": "label",
+                        "apraksts": "Celiņa nosaukums lietotāja saskarnē."
+                    }
+                ],
+                "pieejamiba": "Nodrošina subtitrus vai parakstus pieejamībai.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <audio> vai <video>.",
+                "piemers": "<track kind='subtitles' src='subtitri.vtt' srclang='lv' label='Latviešu'>"
+            },
+            {
+                "tegs": "video",
+                "nozime": "Iegulda video saturu, piemēram, filmas vai video straumes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Video faila URL."
+                    },
+                    {
+                        "nosaukums": "controls",
+                        "apraksts": "Rāda video vadīklas."
+                    },
+                    {
+                        "nosaukums": "poster",
+                        "apraksts": "Attēla URL, kas rādās pirms atskaņošanas."
+                    },
+                    {
+                        "nosaukums": "autoplay",
+                        "apraksts": "Atskaņo video automātiski."
+                    },
+                    {
+                        "nosaukums": "loop",
+                        "apraksts": "Cikliski atskaņo video."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet subtitrus un alternatīvu saturu pieejamībai.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onplay",
+                    "onpause"
+                ],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<video controls poster='plakats.jpg'><source src='video.mp4' type='video/mp4'></video>"
+            },
+            {
+                "tegs": "embed",
+                "nozime": "Iegulda ārēju saturu vai spraudni, piemēram, Flash vai citus objektus.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Iegultā resursa URL."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Resursa MIME tips."
+                    },
+                    {
+                        "nosaukums": "width",
+                        "apraksts": "Iegultā satura platums pikseļos."
+                    },
+                    {
+                        "nosaukums": "height",
+                        "apraksts": "Iegultā satura augstums pikseļos."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet alternatīvu saturu, ja spraudnis nav pieejams.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onload"
+                ],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<embed src='spraudnis.swf' type='application/x-shockwave-flash'>"
+            },
+            {
+                "tegs": "iframe",
+                "nozime": "Iegulda citu HTML dokumentu pašreizējā dokumentā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Iegultā dokumenta URL."
+                    },
+                    {
+                        "nosaukums": "width",
+                        "apraksts": "IFrame platums pikseļos."
+                    },
+                    {
+                        "nosaukums": "height",
+                        "apraksts": "IFrame augstums pikseļos."
+                    },
+                    {
+                        "nosaukums": "sandbox",
+                        "apraksts": "Ierobežo saturu drošības apsvērumu dēļ."
+                    },
+                    {
+                        "nosaukums": "allow",
+                        "apraksts": "Norāda atļautās funkcijas (piem., 'fullscreen')."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet title atribūtu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onload"
+                ],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<iframe src='https://piemers.lv' title='Iegulta lapa'></iframe>"
+            },
+            {
+                "tegs": "object",
+                "nozime": "Iegulda ārēju resursu, piemēram, attēlu, PDF vai spraudni.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "data",
+                        "apraksts": "Iegultā resursa URL."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Resursa MIME tips."
+                    },
+                    {
+                        "nosaukums": "width",
+                        "apraksts": "Objekta platums pikseļos."
+                    },
+                    {
+                        "nosaukums": "height",
+                        "apraksts": "Objekta augstums pikseļos."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet alternatīvu saturu, ja resurss nav pieejams.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [
+                    "onload"
+                ],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<object data='dokuments.pdf' type='application/pdf'>Rezerves saturs</object>"
+            },
+            {
+                "tegs": "param",
+                "nozime": "Definē parametrus <object> elementam.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Parametra nosaukums."
+                    },
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Parametra vērtība."
+                    }
+                ],
+                "pieejamiba": "Neietekmē pieejamību tieši, bet nodrošiniet alternatīvu saturu.",
+                "semantiskaNozime": "Strukturāls, iegults",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <object>.",
+                "piemers": "<param name='autoplay' value='true'>"
+            },
+            {
+                "tegs": "picture",
+                "nozime": "Ļauj norādīt vairākus attēlu avotus dažādiem displeja nosacījumiem.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Nodrošiniet, ka <img> iekš <picture> ir pieejams ar alt atribūtu.",
+                "semantiskaNozime": "Semantisks, iegults",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur iegults saturs ir gaidīts.",
+                "piemers": "<picture><source srcset='liels.jpg' media='(min-width: 800px)'><img src='mazs.jpg' alt='Attēls'></picture>"
+            },
+            {
+                "tegs": "source",
+                "nozime": "Norāda vairākus multivides resursus <video>, <audio> vai <picture> elementiem.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "src",
+                        "apraksts": "Resursa URL."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Resursa MIME tips."
+                    },
+                    {
+                        "nosaukums": "srcset",
+                        "apraksts": "Attēlu avotu kopa dažādām izšķirtspējām."
+                    },
+                    {
+                        "nosaukums": "media",
+                        "apraksts": "Mediju vaicājums, kas nosaka, kad avots ir piemērots."
+                    }
+                ],
+                "pieejamiba": "Neietekmē pieejamību tieši, bet nodrošiniet alternatīvu saturu.",
+                "semantiskaNozime": "Strukturāls, iegults",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <video>, <audio> vai <picture>.",
+                "piemers": "<source src='video.mp4' type='video/mp4'>"
+            },
+            {
+                "tegs": "canvas",
+                "nozime": "Nodrošina dinamisku, skriptējamu grafikas attēlošanu, piemēram, zīmēšanu vai animācijas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "width",
+                        "apraksts": "Audekla platums pikseļos."
+                    },
+                    {
+                        "nosaukums": "height",
+                        "apraksts": "Audekla augstums pikseļos."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet alternatīvu saturu audekla iekšpusē ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, grafisks",
+                "saistitieNotikumi": [
+                    "onclick",
+                    "onmousemove"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas vai frāžu saturs ir gaidīts.",
+                "piemers": "<canvas id='mansAudekls' width='200' height='100'>Rezerves saturs</canvas>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Formu saturs",
+        "tagi": [
+            {
+                "tegs": "form",
+                "nozime": "Pārstāv sadaļu ar interaktīvām vadīklām informācijas iesniegšanai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "action",
+                        "apraksts": "URL, kur nosūtīt formas datus."
+                    },
+                    {
+                        "nosaukums": "method",
+                        "apraksts": "HTTP metode formas iesniegšanai (piem., 'get', 'post')."
+                    },
+                    {
+                        "nosaukums": "enctype",
+                        "apraksts": "Datu kodēšanas tips formas iesniegšanai."
+                    },
+                    {
+                        "nosaukums": "novalidate",
+                        "apraksts": "Atspējo formas validāciju iesniegšanas brīdī."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet aria-label vai <legend> skaidrībai.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onsubmit",
+                    "onreset"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<form action='/iesniegt' method='post'><input type='text'></form>"
+            },
+            {
+                "tegs": "label",
+                "nozime": "Nodrošina aprakstu formas vadīklai, uzlabojot pieejamību.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "for",
+                        "apraksts": "Saista etiķeti ar vadīklu, norādot tās id."
+                    }
+                ],
+                "pieejamiba": "Vienmēr saistiet etiķeti ar vadīklu, lai atbalstītu ekrānlasītājus.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <form> vai kur frāžu saturs ir gaidīts.",
+                "piemers": "<label for='vards'>Vārds:</label><input id='vards' type='text'>"
+            },
+            {
+                "tegs": "input",
+                "nozime": "Izveido interaktīvu vadīklu formām, piemēram, teksta laukus vai pogas.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Ievades tips (piem., 'text', 'checkbox', 'file')."
+                    },
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Ievades nosaukums formas iesniegšanai."
+                    },
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Ievades noklusējuma vērtība."
+                    },
+                    {
+                        "nosaukums": "required",
+                        "apraksts": "Padara ievadi obligātu."
+                    },
+                    {
+                        "nosaukums": "placeholder",
+                        "apraksts": "Norāda paredzamo ievades formātu."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet <label> un aria-describedby skaidrībai.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange",
+                    "oninput"
+                ],
+                "lietojumaKonteksts": "Iekš <form> vai kur frāžu saturs ir gaidīts.",
+                "piemers": "<input type='text' name='vards' required>"
+            },
+            {
+                "tegs": "button",
+                "nozime": "Pārstāv klikšķināmu pogu, ko izmanto formu iesniegšanai vai darbību veikšanai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Pogas tips (piem., 'submit', 'button', 'reset')."
+                    },
+                    {
+                        "nosaukums": "disabled",
+                        "apraksts": "Atspējo pogu."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet aria-pressed pārslēgšanas pogām.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "<button type='submit'>Iesniegt</button>"
+            },
+            {
+                "tegs": "select",
+                "nozime": "Pārstāv vadīklu, kas piedāvā opciju izvēlni.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Nosaukums formas iesniegšanai."
+                    },
+                    {
+                        "nosaukums": "multiple",
+                        "apraksts": "Ļauj izvēlēties vairākas opcijas."
+                    },
+                    {
+                        "nosaukums": "required",
+                        "apraksts": "Padara izvēli obligātu."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet <label> un aria-describedby skaidrībai.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange"
+                ],
+                "lietojumaKonteksts": "Iekš <form> vai kur frāžu saturs ir gaidīts.",
+                "piemers": "<select name='opcijas'><option value='1'>Opcija 1</option></select>"
+            },
+            {
+                "tegs": "datalist",
+                "nozime": "Nodrošina iepriekš definētu opciju sarakstu <input> elementam ar automātisko aizpildīšanu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka opcijas ir saprotamas ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<input list='opcijas'><datalist id='opcijas'><option value='Opcija 1'></datalist>"
+            },
+            {
+                "tegs": "optgroup",
+                "nozime": "Grupē saistītas opcijas <select> elementā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "label",
+                        "apraksts": "Grupas nosaukums, kas redzams lietotājam."
+                    },
+                    {
+                        "nosaukums": "disabled",
+                        "apraksts": "Atspējo visu grupu."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet skaidru label atribūtu pieejamībai.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <select>.",
+                "piemers": "<optgroup label='Kategorija'><option value='1'>Opcija</option></optgroup>"
+            },
+            {
+                "tegs": "option",
+                "nozime": "Definē vienu opciju <select> vai <datalist> elementā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Opcijas vērtība, kas tiek nosūtīta."
+                    },
+                    {
+                        "nosaukums": "selected",
+                        "apraksts": "Padara opciju noklusēti izvēlētu."
+                    },
+                    {
+                        "nosaukums": "disabled",
+                        "apraksts": "Atspējo opciju."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet skaidru un aprakstošu saturu opcijai.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <select> vai <datalist>.",
+                "piemers": "<option value='1'>Opcija 1</option>"
+            },
+            {
+                "tegs": "textarea",
+                "nozime": "Nodrošina daudzrindu teksta ievades lauku formās.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Nosaukums formas iesniegšanai."
+                    },
+                    {
+                        "nosaukums": "rows",
+                        "apraksts": "Redzamo rindu skaits."
+                    },
+                    {
+                        "nosaukums": "cols",
+                        "apraksts": "Redzamo kolonnu skaits."
+                    },
+                    {
+                        "nosaukums": "required",
+                        "apraksts": "Padara ievadi obligātu."
+                    },
+                    {
+                        "nosaukums": "placeholder",
+                        "apraksts": "Norāda paredzamo ievades formātu."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet <label> un aria-describedby skaidrībai.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange",
+                    "oninput"
+                ],
+                "lietojumaKonteksts": "Iekš <form> vai kur frāžu saturs ir gaidīts.",
+                "piemers": "<textarea name='komentars' rows='4' cols='50' placeholder='Ievadiet komentāru'></textarea>"
+            },
+            {
+                "tegs": "output",
+                "nozime": "Pārstāv aprēķina vai lietotāja darbību rezultātu formā.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "for",
+                        "apraksts": "Norāda ievades elementu ID, kas saistīti ar izvadi."
+                    },
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Nosaukums formas iesniegšanai."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet aria-live='polite' dinamiskām izmaiņām ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange"
+                ],
+                "lietojumaKonteksts": "Iekš <form> vai kur frāžu saturs ir gaidīts.",
+                "piemers": "<output for='skaits'>Rezultāts: 0</output>"
+            },
+            {
+                "tegs": "progress",
+                "nozime": "Pārstāv uzdevuma izpildes progresu, piemēram, lejupielādi vai formu aizpildi.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Pašreizējais progresa līmenis."
+                    },
+                    {
+                        "nosaukums": "max",
+                        "apraksts": "Maksimālā progresa vērtība."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet aria-valuenow un aria-valuemax dinam禁止. Izmantojiet role='progressbar' ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas vai frāžu saturs ir gaidīts.",
+                "piemers": "<progress value='50' max='100'>50%</progress>"
+            },
+            {
+                "tegs": "meter",
+                "nozime": "Pārstāv mērījumu noteiktā diapazonā, piemēram, diska vietu vai temperatūru.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Pašreizējā mērījuma vērtība."
+                    },
+                    {
+                        "nosaukums": "min",
+                        "apraksts": "Minimālā diapazona vērtība."
+                    },
+                    {
+                        "nosaukums": "max",
+                        "apraksts": "Maksimālā diapazona vērtība."
+                    },
+                    {
+                        "nosaukums": "low",
+                        "apraksts": "Zemākā pieļaujamā vērtība."
+                    },
+                    {
+                        "nosaukums": "high",
+                        "apraksts": "Augstākā pieļaujamā vērtība."
+                    },
+                    {
+                        "nosaukums": "optimum",
+                        "apraksts": "Optimālā vērtība diapazonā."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet aria-valuenow, aria-valuemin un aria-valuemax ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onchange"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas vai frāžu saturs ir gaidīts.",
+                "piemers": "<meter value='70' min='0' max='100' low='20' high='80' optimum='50'>70%</meter>"
+            },
+            {
+                "tegs": "fieldset",
+                "nozime": "Grupē saistītus formas elementus, parasti ar aprakstu <legend>.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "disabled",
+                        "apraksts": "Atspējo visus grupas elementus."
+                    },
+                    {
+                        "nosaukums": "name",
+                        "apraksts": "Grupas nosaukums formas iesniegšanai."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet <legend> skaidrai grupas identifikācijai ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <form>.",
+                "piemers": "<fieldset><legend>Kontaktinformācija</legend><input type='text' name='vards'></fieldset>"
+            },
+            {
+                "tegs": "legend",
+                "nozime": "Nodrošina aprakstu <fieldset> grupai, uzlabojot pieejamību.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka apraksts ir skaidrs un aprakstošs ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <fieldset>.",
+                "piemers": "<legend>Lietotāja dati</legend>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Tabulas saturs",
+        "tagi": [
+            {
+                "tegs": "table",
+                "nozime": "Pārstāv tabulveida datus rindās un kolonnās.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet <caption> un ARIA lomas (piem., role='table'), lai uzlabotu pieejamību ekrānlasītājiem. Nodrošiniet skaidrus virsrakstus ar <th>.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<table><tr><th>Virsraksts</th></tr><tr><td>Dati</td></tr></table>"
+            },
+            {
+                "tegs": "caption",
+                "nozime": "Nodrošina tabulas aprakstu vai virsrakstu, kas parasti tiek rādīts virs tabulas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka apraksts ir skaidrs un aprakstošs ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Pirmais bērns iekš <table>.",
+                "piemers": "<table><caption>Mēneša Pārskats</caption><tr><td>Dati</td></tr></table>"
+            },
+            {
+                "tegs": "thead",
+                "nozime": "Grupē tabulas galvenes rindas, kas satur virsrakstu šūnas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet kopā ar <th> un scope atribūtu, lai uzlabotu ekrānlasītāju saderību.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <table>, pirms <tbody> vai <tr>.",
+                "piemers": "<table><thead><tr><th>Virsraksts</th></tr></thead></table>"
+            },
+            {
+                "tegs": "tbody",
+                "nozime": "Grupē tabulas galvenā satura rindas, kas satur datu šūnas.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Parasti semantiski skaidrs, bet izmantojiet ARIA, ja tabula ir sarežģīta.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <table>, pēc <thead> vai <caption>.",
+                "piemers": "<table><tbody><tr><td>Dati</td></tr></tbody></table>"
+            },
+            {
+                "tegs": "tfoot",
+                "nozime": "Grupē tabulas kājenes rindas, kas satur kopsavilkuma vai papilddatus.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Nodrošiniet, ka kājenes saturs ir skaidrs ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <table>, pēc <tbody> vai <thead>.",
+                "piemers": "<table><tfoot><tr><td>Kopsumma</td></tr></tfoot></table>"
+            },
+            {
+                "tegs": "tr",
+                "nozime": "Pārstāv tabulas rindu, kas satur šūnas (<th> vai <td>).",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka šūnu secība ir loģiska ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <thead>, <tbody>, <tfoot> vai tieši <table>.",
+                "piemers": "<tr><td>Dati</td></tr>"
+            },
+            {
+                "tegs": "th",
+                "nozime": "Pārstāv tabulas virsraksta šūnu, kas apraksta kolonnas vai rindas saturu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "scope",
+                        "apraksts": "Norāda, vai virsraksts attiecas uz rindu, kolonnu vai grupu (piem., 'row', 'col')."
+                    },
+                    {
+                        "nosaukums": "colspan",
+                        "apraksts": "Šūnas aptverto kolonnu skaits."
+                    },
+                    {
+                        "nosaukums": "rowspan",
+                        "apraksts": "Šūnas aptverto rindu skaits."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet scope atribūtu vai ARIA lomas (piem., aria-describedby) skaidrībai.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <tr>.",
+                "piemers": "<th scope='col'>Virsraksts</th>"
+            },
+            {
+                "tegs": "td",
+                "nozime": "Pārstāv tabulas datu šūnu, kas satur galvenos tabulas datus.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "colspan",
+                        "apraksts": "Šūnas aptverto kolonnu skaits."
+                    },
+                    {
+                        "nosaukums": "rowspan",
+                        "apraksts": "Šūnas aptverto rindu skaits."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka šūnu saturs ir skaidrs un saistīts ar attiecīgiem virsrakstiem.",
+                "semantiskaNozime": "Semantisks, datu saturs",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <tr>.",
+                "piemers": "<td>Dati</td>"
+            },
+            {
+                "tegs": "col",
+                "nozime": "Definē tabulas kolonnas atribūtus, piemēram, platumu vai izlīdzinājumu.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "span",
+                        "apraksts": "Kolonnu skaits, uz kurām attiecas atribūti."
+                    }
+                ],
+                "pieejamiba": "Neietekmē pieejamību tieši, bet nodrošiniet, ka stili neapdraud salasāmību.",
+                "semantiskaNozime": "Strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <colgroup>.",
+                "piemers": "<col span='2' style='width: 100px;'>"
+            },
+            {
+                "tegs": "colgroup",
+                "nozime": "Grupē tabulas kolonnas, lai piemērotu kopīgus atribūtus vai stilus.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "span",
+                        "apraksts": "Kolonnu skaits, uz kurām attiecas grupa."
+                    }
+                ],
+                "pieejamiba": "Neietekmē pieejamību tieši, bet nodrošiniet, ka stili saglabā salasāmību.",
+                "semantiskaNozime": "Strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <table>, pirms <caption>, <thead> vai <tbody>.",
+                "piemers": "<colgroup><col style='width: 50%;'><col style='width: 50%;'></colgroup>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Interaktīvs saturs",
+        "tagi": [
+            {
+                "tegs": "details",
+                "nozime": "Izveido izvēršamu logrīku, kas atklāj papildu informāciju, kad lietotājs to aktivizē.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "open",
+                        "apraksts": "Norāda, ka saturs ir izvērsts pēc noklusējuma."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet <summary> kā vadīklu un nodrošiniet, ka tā ir skaidra ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "ontoggle"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<details><summary>Skatīt vairāk</summary><p>Papildu informācija</p></details>"
+            },
+            {
+                "tegs": "summary",
+                "nozime": "Nodrošina redzamu virsrakstu vai aprakstu <details> elementam, kas kalpo kā izvēršanas vadīkla.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka apraksts ir skaidrs un norāda uz interaktivitāti ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Pirmais bērns iekš <details>.",
+                "piemers": "<summary>Vairāk informācijas</summary>"
+            },
+            {
+                "tegs": "dialog",
+                "nozime": "Pārstāv dialoglodziņu vai modālo logu, ko var atvērt vai aizvērt.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "open",
+                        "apraksts": "Norāda, ka dialoglodziņš ir aktīvs un redzams."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet role='dialog' un aria-labelledby vai aria-label ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, interaktīvs",
+                "saistitieNotikumi": [
+                    "onclose",
+                    "oncancel"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<dialog open><p>Dialoga saturs</p><button>Aizvērt</button></dialog>"
+            }
+        ]
+    },
+    {
+        "kategorija": "Strukturālie elementi",
+        "tagi": [
+            {
+                "tegs": "div",
+                "nozime": "Vispārējs konteiners plūsmas saturam, ko izmanto grupēšanai vai stilēšanai.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet ARIA lomas (piem., role='group'), ja pievienojat semantisku nozīmi.",
+                "semantiskaNozime": "Nesemantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onclick",
+                    "onmouseover"
+                ],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<div class='konteiners'><p>Saturs</p></div>"
+            },
+            {
+                "tegs": "p",
+                "nozime": "Pārstāv teksta rindkopu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pati par sevi semantiska, nodrošiniet loģisku teksta plūsmu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<p>Šī ir rindkopa.</p>"
+            },
+            {
+                "tegs": "hr",
+                "nozime": "Pārstāv tematisku pārtraukumu starp rindkopām, piemēram, tēmas maiņu.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet aria-hidden='true', ja tas ir tikai dekoratīvs, vai nodrošiniet aprakstu, ja semantisks.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<hr>"
+            },
+            {
+                "tegs": "ul",
+                "nozime": "Pārstāv nesakārtotu sarakstu, kur secībai nav nozīmes.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='list', ja saraksts ir pielāgots, lai nodrošinātu ekrānlasītāju saderību.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<ul><li>Punkts 1</li><li>Punkts 2</li></ul>"
+            },
+            {
+                "tegs": "ol",
+                "nozime": "Pārstāv sakārtotu sarakstu, kur secībai ir nozīme, piemēram, numurēts saraksts.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "reversed",
+                        "apraksts": "Apgriež saraksta secību."
+                    },
+                    {
+                        "nosaukums": "start",
+                        "apraksts": "Norāda saraksta sākuma numuru."
+                    },
+                    {
+                        "nosaukums": "type",
+                        "apraksts": "Norāda numerācijas tipu (piem., '1', 'a', 'I')."
+                    }
+                ],
+                "pieejamiba": "Pārliecinieties, ka numerācija ir skaidra ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<ol><li>Pirmais</li><li>Otrais</li></ol>"
+            },
+            {
+                "tegs": "li",
+                "nozime": "Pārstāv vienu vienumu sarakstā, kas ietverts <ul>, <ol>.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "value",
+                        "apraksts": "Norāda kārtas numuru <ol> sarakstā (tikai <ol>)."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet, ka saturs ir skaidrs un loģiski saistīts ar saraksta kontekstu.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onclick"
+                ],
+                "lietojumaKonteksts": "Iekš <ul>, <ol>.",
+                "piemers": "<li>Saraksta vienums</li>"
+            },
+            {
+                "tegs": "dl",
+                "nozime": "Pārstāv aprakstu sarakstu, kas sastāv no termina (<dt>) un apraksta (<dd>) pāriem.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet role='definition', ja struktūra ir sarežģīta, lai uzlabotu ekrānlasītāju saderību.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<dl><dt>Termins</dt><dd>Apraksts</dd></dl>"
+            },
+            {
+                "tegs": "dt",
+                "nozime": "Pārstāv terminu aprakstu sarakstā (<dl>).",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka termins ir skaidrs un saistīts ar atbilstošu aprakstu.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <dl>.",
+                "piemers": "<dt>HTML</dt>"
+            },
+            {
+                "tegs": "dd",
+                "nozime": "Pārstāv termina aprakstu vai definīciju aprakstu sarakstā (<dl>).",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Nodrošiniet, ka apraksts ir loģiski saistīts ar terminu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <dl>.",
+                "piemers": "<dd>HyperText Markup Language</dd>"
+            },
+            {
+                "tegs": "figure",
+                "nozime": "Pārstāv patstāvīgu saturu, piemēram, attēlu, diagrammu vai kodu, kas saistīts ar galveno saturu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izmantojiet <figcaption> aprakstam un nodrošiniet, ka saturs ir pieejams ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, sadalījuma",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<figure><img src='attels.jpg' alt='Diagramma'><figcaption>Diagramma 1</figcaption></figure>"
+            },
+            {
+                "tegs": "figcaption",
+                "nozime": "Nodrošina aprakstu vai virsrakstu <figure> elementam.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka apraksts ir skaidrs un aprakstošs ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, anotācija",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Iekš <figure>, kā pirmais vai pēdējais bērns.",
+                "piemers": "<figcaption>Attēla apraksts</figcaption>"
+            },
+            {
+                "tegs": "blockquote",
+                "nozime": "Pārstāv citātu no cita avota, kas parasti ir vizuāli atdalīts no galvenā teksta.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "cite",
+                        "apraksts": "URL, kas norāda citāta avotu."
+                    }
+                ],
+                "pieejamiba": "Nodrošiniet, ka avots ir skaidrs, izmantojot <cite> vai cite atribūtu.",
+                "semantiskaNozime": "Semantisks, citāts",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<blockquote cite='https://piemers.lv'>Citēts teksts</blockquote>"
+            },
+            {
+                "tegs": "pre",
+                "nozime": "Pārstāv iepriekš formatētu tekstu, saglabājot atstarpes un rindpārlaušanu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Pārliecinieties, ka teksts ir salasāms ekrānlasītājiem, it īpaši, ja satur kodu.",
+                "semantiskaNozime": "Semantisks, formatēšana",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur plūsmas saturs ir gaidīts.",
+                "piemers": "<pre>   Teksts ar atstarpi\n   Otrā rinda</pre>"
+            },
+            {
+                "tegs": "br",
+                "nozime": "Ievieto rindas pārtraukumu, lai atdalītu teksta līnijas.",
+                "irSledzams": true,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Izvairieties no pārmērīgas lietošanas; izmantojiet CSS vai semantiskus elementus atdalīšanai.",
+                "semantiskaNozime": "Strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Kur frāžu saturs ir gaidīts.",
+                "piemers": "Teksts<br>Otra rinda"
+            }
+        ]
+    },
+    {
+        "kategorija": "Dokumenta struktūra",
+        "tagi": [
+            {
+                "tegs": "html",
+                "nozime": "Pārstāv HTML dokumenta saknes elementu, kas satur visu lapas saturu.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [
+                    {
+                        "nosaukums": "lang",
+                        "apraksts": "Norāda dokumenta galveno valodu (piem., 'lv')."
+                    },
+                    {
+                        "nosaukums": "manifest",
+                        "apraksts": "Norāda kešatmiņas manifesta URL progresīvajām tīmekļa lietotnēm."
+                    }
+                ],
+                "pieejamiba": "Izmantojiet lang atribūtu, lai nodrošinātu pareizu valodas atpazīšanu ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [],
+                "lietojumaKonteksts": "Dokumenta saknes elements.",
+                "piemers": "<html lang='lv'><head></head><body></body></html>"
+            },
+            {
+                "tegs": "body",
+                "nozime": "Pārstāv dokumenta galveno saturu, kas ir redzams lietotājam.",
+                "irSledzams": false,
+                "globalieAtributi": true,
+                "specifiskieAtributi": [],
+                "pieejamiba": "Nodrošiniet, ka saturs ir loģiski strukturēts ekrānlasītājiem.",
+                "semantiskaNozime": "Semantisks, strukturāls",
+                "saistitieNotikumi": [
+                    "onload",
+                    "onscroll"
+                ],
+                "lietojumaKonteksts": "Iekš <html>, pēc <head>.",
+                "piemers": "<body><h1>Saturs</h1></body>"
+            }
+        ]
+    }
+]

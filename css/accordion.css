@@ -1,0 +1,15 @@
+#main section, .inactiveSec {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s; 
+  }
+  
+  .activeSec {
+    max-height: 1200px !important;
+    overflow-y: auto;
+    transition: max-height 5s ease-in-out !important; 
+  }
+
+  section p, section dl, section ul, section ol {
+    width: 90%;
+  }

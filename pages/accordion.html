@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB lapa</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+
+    <script defer src="../js/accordion2.js"></script>
+</head>
+
+<body id="main">
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html"> Sākums</a>
+            <a href="../pages/accordion.html"  class="active">Tēmas</a>
+            <a href="../pages/carousel.html">Vēsture</a>
+            <a href="../pages/animations.html">Animācijas</a>
+            <a href="../pages/buttons.html">Pogas</a>
+            <a href="../pages/forms.html">Formas</a>
+        </nav>
+    </header>
+
+    <main>
+        <button class="showContentBtn" data-id="html">HTML</button>
+        <section id="html"  class="inactiveSec">
+            <h2>HTML - Tīmekļa struktūras pamats</h2>
+            <img src="../images/html_logo.png" class="circle" alt="HTML logo" style="width: 100px;">
+            <p>Lai veidotu jebkuru WEB aplikāciju, ir nepieciešamas stabilas HTML zināšanas. Tas ietver:</p>
+            <ul>
+                <li><strong>Pamata tagi:</strong> &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;div&gt;, &lt;span&gt;, &lt;p&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;a&gt;, &lt;img&gt;, &lt;form&gt;, &lt;input&gt;, &lt;button&gt; u.c.</li>
+                <li><strong>Semantiskie tagi:</strong> &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, kas palīdz strukturēt saturu un uzlabo SEO.</li>
+                <li><strong>Formu elementi:</strong> Dažādi ievades lauki, pogas, izvēles saraksti un to atribūti datu ievadei.</li>
+                <li><strong>Multivides elementi:</strong> &lt;img&gt;, &lt;video&gt;, &lt;audio&gt; ievietošana un to pamata atribūti.</li>
+                <li><strong>Pieejamība (Accessibility):</strong> Kā veidot HTML, ņemot vērā lietotājus ar īpašām vajadzībām (piemēram, izmantojot `alt` atribūtus, semantiskos tagus).</li>
+            </ul>
+        </section>
+        
+        <button class="showContentBtn" data-id="css">CSS</button>
+        <section id="css"  class="inactiveSec">
+            <h2>CSS - Vizuālais noformējums un izkārtojums</h2>
+            <img src="../images/css_logo.png" class="circle" alt="CSS logo" style="width: 100px;">
+            <p>CSS ir atbildīgs par to, kā WEB aplikācija izskatās. Svarīgi apgūt:</p>
+            <ul>
+                <li><strong>Selektori:</strong> Kā atlasīt HTML elementus, lai tiem piešķirtu stilus (elementu selektori, klases, ID, atribūtu selektori, pseidoklases, pseidoelementi).</li>
+                <li><strong>Box Model:</strong> Izpratne par saturu, atkāpēm (padding), apmalēm (border) un ārējām atkāpēm (margin) un kā tie ietekmē elementu izmērus un izvietojumu.</li>
+                <li><strong>Izkārtojumi (Layout):</strong>
+                    <ul>
+                        <li><strong>Flexbox:</strong> Elastīgu viendimensionālu izkārtojumu veidošana.</li>
+                        <li><strong>Grid:</strong> Spēcīgu divdimensionālu izkārtojumu veidošana.</li>
+                        <li><strong>Float un Clearfix:</strong> Tradicionālas metodes izkārtojumiem (lai gan Flexbox un Grid ir ieteicamākas jauniem projektiem).</li>
+                        <li><strong>Positioning:</strong> Kā kontrolēt elementu pozicionēšanu (static, relative, absolute, fixed, sticky).</li>
+                    </ul>
+                </li>
+                <li><strong>Tipogrāfija:</strong> Fontu ģimenes, izmēri, līnijas augstums, teksta formatēšana.</li>
+                <li><strong>Krāsas un foni:</strong> Kā izmantot krāsas, gradientus un fona attēlus.</li>
+                <li><strong>Responsīvais dizains:</strong>
+                    <ul>
+                        <li><strong>Media Queries:</strong> Stilu pielāgošana dažādiem ekrāna izmēriem.</li>
+                        <li><strong>Elastīgi izmēri:</strong> Procentuāli un relatīvi izmēri (em, rem, vw, vh).</li>
+                    </ul>
+                </li>
+                <li><strong>Animācijas un pārejas:</strong> Vienkāršu animāciju un gludu pāreju veidošana.</li>
+            </ul>
+        </section>
+
+        <button class="showContentBtn" data-id="js">JavaScipt</button>
+        <section id="js"  class="inactiveSec">
+            <h2>JavaScript - Interaktivitāte un dinamika</h2>
+            <img src="../images/js_logo.png" class="circle" alt="JavaScript logo" style="width: 100px;">
+            <p>JavaScript piešķir WEB aplikācijām interaktivitāti un ļauj veikt dinamiskas izmaiņas bez lapas pārlādes. Būtiskas zināšanas:</p>
+            <ul>
+                <li><strong>Pamati:</strong> Mainīgie, datu tipi, operatori, kontroles struktūras (if/else, for, while), funkcijas.</li>
+                <li><strong>DOM (Document Object Model):</strong> Kā JavaScript var piekļūt un manipulēt ar HTML struktūru un saturu.</li>
+                <li><strong>Notikumu apstrāde (Event Handling):</strong> Kā reaģēt uz lietotāju darbībām (klikšķi, peles kustības, ievade formās).</li>
+                <li><strong>Asinhronā programmēšana:</strong> Kā veikt darbības, kas nebloķē galveno pavedienu (piemēram, AJAX pieprasījumi).</li>
+                <li><strong>AJAX (Asynchronous JavaScript and XML):</strong> Datu apmaiņa ar serveri bez lapas pārlādes.</li>
+                <li><strong>ES6+ sintakse:</strong> Jaunākās JavaScript versiju funkcijas (piemēram, arrow functions, let/const, promises, async/await, moduļi).</li>
+                <li><strong>Darbs ar datiem:</strong> JSON datu formāts un tā apstrāde.</li>
+                <li><strong>Bibliotēkas un ietvari (Frameworks):</strong> Pamatzināšanas par populārākajiem rīkiem kā React, Angular vai Vue.js (atkarībā no izvēlētā virziena).</li>
+            </ul>
+        </section>
+        
+        <button class="showContentBtn" data-id="mysql">MySQL</button>
+        <section id="mysql"  class="inactiveSec">
+            <h2>MySQL - Datu bāzu pārvaldība</h2>
+            <img src="../images/mysql_logo.png" class="circle" alt="MySQL logo" style="width: 100px;">
+            <p>MySQL ir populāra relāciju datubāzu pārvaldības sistēma, ko izmanto WEB aplikāciju datu uzglabāšanai un pārvaldībai. Svarīgi apgūt:</p>
+            <ul>
+                <li><strong>Relāciju datubāzu koncepti:</strong> Tabulas, kolonnas, rindas, primārās un ārējās atslēgas, relācijas starp tabulām.</li>
+                <li><strong>SQL (Structured Query Language):</strong> Valoda datu bāzes manipulācijai:
+                    <ul>
+                        <li><strong>CRUD operācijas:</strong> `SELECT` (datu atlase), `INSERT` (datu ievietošana), `UPDATE` (datu atjaunināšana), `DELETE` (datu dzēšana).</li>
+                        <li><strong>Filtēšana un kārtošana:</strong> `WHERE`, `ORDER BY`, `LIMIT`.</li>
+                        <li><strong>Apvienošana (JOIN):</strong> Datu apvienošana no vairākām tabulām.</li>
+                        <li><strong>Agregācijas funkcijas:</strong> `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`.</li>
+                        <li><strong>Grupēšana:</strong> `GROUP BY` un `HAVING`.</li>
+                    </ul>
+                </li>
+                <li><strong>Datubāzes normalizācija:</strong> Principi datu redundances samazināšanai un datu integritātes uzlabošanai.</li>
+                <li><strong>Drošība:</strong> SQL injekcijas novēršana.</li>
+            </ul>
+        </section>
+        
+        <button class="showContentBtn" data-id="php">PHP</button>
+        <section id="php"  class="inactiveSec">
+            <h2>PHP - Serveru puses loģika</h2>
+            <img src="../images/php_logo.png" class="circle" alt="PHP logo" style="width: 100px;">
+            <p>PHP ir plaši izmantota serveru puses skriptu valoda WEB izstrādē. Svarīgi apgūt:</p>
+            <ul>
+                <li><strong>Pamati:</strong> Sintakse, mainīgie, datu tipi, operatori, kontroles struktūras, funkcijas, klases un objekti (OOP).</li>
+                <li><strong>Darbs ar formām:</strong> Datu apstrāde no HTML formām (`$_GET`, `$_POST`).</li>
+                <li><strong>Sesijas un sīkdatnes (Cookies):</strong> Lietotāju stāvokļa un informācijas saglabāšana starp pieprasījumiem.</li>
+                <li><strong>Darbs ar datubāzēm (MySQLi vai PDO):</strong> Savienojuma izveide, vaicājumu izpilde un datu apstrāde.</li>
+                <li><strong>Drošība:</strong> Ievades validācija, datu sanitizācija, aizsardzība pret CSRF un citām ievainojamībām.</li>
+                <li><strong>MVC (Model-View-Controller) arhitektūra:</strong> Izpratne par koda strukturēšanas principiem (bieži izmanto ar ietvariem kā Laravel vai Symfony).</li>
+                <li><strong>Autentifikācija un autorizācija:</strong> Lietotāju reģistrācijas un piekļuves kontroles sistēmu izveide.</li>
+                <li><strong>API izstrāde:</strong> RESTful API veidošana datu apmaiņai ar citām aplikācijām.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+
+</body>
+
+</html>

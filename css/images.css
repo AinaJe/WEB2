@@ -1,0 +1,77 @@
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.image-item {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* API */
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.partOfSpeechGroup {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.showContentBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.showContentBtn:hover {
+    background-color: #e0e0e0;
+}
+
+section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+section.activeSec {
+    max-height: 500px; /* Pielāgojiet pēc vajadzības */
+    transition: max-height 0.3s ease-in;
+    padding: 10px;
+}
+
+.definition {
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.example {
+    color: green;
+    font-style: italic;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.synonyms, .antonyms {
+    color: #555;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}

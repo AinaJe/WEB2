@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+@import url('./accordion.css');
+@import url('./animation.css');
+@import url('./button.css');
+@import url('./carousel.css');
+@import url('./chat.css');
+@import url('./dialog.css');
+@import url('./footer.css');
+@import url('./navigation.css');
+@import url('./table.css');
+@import url('./form.css');
+@import url('./ajax.css');
+@import url('./images.css');
+
+:root{
+    font-size: 14pt;
+    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+
+    --color1: #000000;
+    --color2: #FFFFFF;
+    --color3: #F5F5DC;
+    --color4: #E0CAA6;
+    --color5: #B8860B;
+    --color6: #8B4513;
+    --color7: #8FBC8F;
+    --color8: #D3C1A4;
+
+    --transparent0: #b8870bdd;
+    --transparent1: #b8870bac;
+    --transparent2: #b8870b68;
+    --transparent3: #b8870b22;
+    --transparent4: #8fbc8f6c;
+    
+    --gradient1: linear-gradient(var(--color3), var(--color4));
+    --backgroundImage:url("../images/background.jpg");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: var(--gradient1);
+    background-size: cover; /* Liek attēlam pārklāt visu elementa fonu */
+    background-repeat: no-repeat; /* Novērš attēla atkārtošanos */
+    background-attachment: fixed; /* (Pēc izvēles) Fiksē attēlu fonā, ritinoties saturam */
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin: 0px;
+    margin: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: var(--color7);
+}
+
+h2 {
+    color: var(--color6);
+}
+
+h5{
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+p, .text, ul, ol{
+    width: 75%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: justify;
+    background-color: var(--transparent2);
+    border-bottom: 6px solid var(--color2);
+    box-sizing: border-box;
+}
+
+ul, ol {
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+ul ul {
+    margin: 5px;
+    width: 100%;
+    border-bottom: none;
+}
+
+img{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: var(--color4) 10px 10px 12px;
+}
+.circle {
+    border-radius: 50px;
+}
+
+dt, dd, li {
+    padding: 5px;
+}
+
+

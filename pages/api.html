@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB lapa</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+
+</head>
+
+<body id="main">
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html"> Sākums</a>
+            <a href="../pages/accordion.html">Tēmas</a>
+            <a href="../pages/carousel.html">Vēsture</a>
+            <a href="../pages/animations.html">Animācijas</a>
+            <a href="../pages/buttons.html">Pogas</a>
+            <a href="../pages/forms.html">Formas</a>
+            <a href="../pages/ajax.html">Ajax</a>
+            <a href="../pages/ajax.html" class="active">API</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <p id="current-temperature"></p>
+        </div>
+        
+        <div id="hourly-forecast" class="table2">
+        </div>
+
+
+        <div id="two-week-forecast-table" class="table2">
+        </div>
+
+
+
+
+
+        <div id="image-container"></div>
+
+
+        <h1>Nejaušs attēls</h1>
+        <img src="https://picsum.photos/400/300" alt="Nejaušs attēls">
+
+<img src="https://dummyimage.com/250x150/0000ff/fff/Hello" alt="Pielāgots attēls">
+
+<h1>Angļu valodas vārdu meklētājs</h1>
+<input type="text" id="searchInput" placeholder="Ievadiet vārdu">
+<button onclick="searchWord()">Meklēt</button>
+
+<div id="result"></div>
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="../js/api.js"></script>
+</body>
+
+</html>

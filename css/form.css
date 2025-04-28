@@ -1,0 +1,223 @@
+/* Formas */
+
+form, dialog{
+    width: 80%;
+    margin-top: 40px;
+    background-color: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color1);
+}
+
+input, textarea, label, select {
+    width: 95%;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+input, textarea, select {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--color3);
+    border: 1px solid var(--color1);
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input: focus-visible, textarea: focus-visible{
+    background-color: var(--color4);
+    transition: 0.5s linear;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.3em;
+}
+
+input[type="text"][list] {
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+
+  fieldset {
+    border: 2px solid var(--color5); /* Pelēka 2 pikseļu cieta līnija */
+    border-radius: 5px; /* Noapaļoti stūri */
+    padding: 15px;
+    margin-bottom: 2em;
+    background-color: var(--transparent4);
+    box-shadow: 4px 4px 5px var(--color2);
+  }
+
+  legend {
+    color: var(--color2);
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--color6);
+    border-radius: 5px;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--color6); 
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Lai iegūtu nedaudz noapaļotus stūrus */
+  }
+
+  .custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Stilizē checkbox un radio konteinerus*/
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color3);
+    border: 2px solid var(--color5);
+    border-radius: 5px; /* Lai iegūtu nedaudz noapaļotus stūrus */
+  }
+  
+  /* Kad checkbox ir atzīmēts, mainiet fona krāsu */
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: var(--color6);
+  }
+  
+  /* Izveidojiet ķeksīti/atzīmi (slēpts pēc noklusējuma) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Parādiet ķeksīti, kad checkbox ir atzīmēts */
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Stilizējiet ķeksīti */
+  .custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color2);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.label_simple{
+    font-weight: 400;
+}
+
+
+/* Radio pogas */
+.custom-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .radio-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color3);
+    border: 2px solid var(--color5);
+    border-radius: 50%; /* Padara par apaļu */
+  }
+  
+  /* Kad radio poga ir atzīmēta, mainiet fona krāsu */
+  .custom-radio input:checked ~ .radio-dot {
+    background-color: var(--color6);
+  }
+  
+  /* Izveidojiet iekšējo atzīmi (slēpta pēc noklusējuma) */
+  .radio-dot:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Parādiet iekšējo atzīmi, kad radio poga ir atzīmēta */
+  .custom-radio input:checked ~ .radio-dot:after {
+    display: block;
+  }
+  
+  /* Stilizējiet iekšējo atzīmi (mazs, centrēts aplis) */
+  .radio-dot:after {
+    top: 6px;
+    left: 6px;
+    width: 9px;
+    height: 9px;
+    /* background-color: var(--color2); */
+    border-radius: 50%;
+    border: solid var(--color2);
+  }

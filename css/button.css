@@ -1,0 +1,31 @@
+button, .submit, .reset, .button  {
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--color7);
+    outline: 2px solid var(--color5);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover, .submit:hover, .reset:hover, .button:hover {
+    background-color: var(--color5);
+    transition: .5s linear;
+}
+
+.closeButton{
+    position: absolute;
+    right:8px;
+    top:5px;
+    width: 40px;
+    display: block;
+    padding: 3px;
+    font-size: 1.5rem;
+}
+
+
+
