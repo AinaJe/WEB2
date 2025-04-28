@@ -103,8 +103,6 @@ body {
 
   button {
     background-color: none;
-}
-  button {
     margin: 20px;
   }
   .custom-btn {
@@ -683,6 +681,7 @@ body {
   
   /* 12 */
   .btn-12{
+    background-color: none;
     position: relative;
     right: 20px;
     bottom: 20px;
